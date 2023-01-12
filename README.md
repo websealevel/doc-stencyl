@@ -13,7 +13,7 @@
   - [Les scènes](#les-scènes)
   - [Animations](#animations)
   - [Conseils](#conseils)
-  - [Traductions anglais-francais, termes](#traductions-anglais-francais-termes)
+  - [Traductions anglais-français, termes](#traductions-anglais-français-termes)
   - [Liens](#liens)
   - [Ressources](#ressources-1)
 
@@ -22,7 +22,7 @@ Une documentation sur Stencyl et ses concepts et ses concepts. [Stencyl](https:/
 
 >Hollow Knight a été initialement développé sur Stencyl, puis finalement sur Unity.
 
-Bon outil pour des petits jeux 2D, pour s'initier au développement et au design de jeux vidéos. Le fait qu'il soit notamment développé en Java (et sûrement host par la JVM - à confirmer) fait qu'il est naturellement portable vers tous les OS et tous les devices (desktop et mobile). 
+Bon outil pour des petits jeux 2D, pour s'initier au développement et au design de jeux vidéo. Le fait qu'il soit notamment développé en Java (et sûrement host par la JVM - à confirmer) fait qu'il est naturellement portable vers tous les OS et tous les devices (desktop et mobile). 
 
 ## Détails techniques
 
@@ -82,11 +82,11 @@ Dans l'éditeur de template d'acteur (Actory Type Editor):
 
 ## Les scènes
 
-Une scène (scene) sont des niveaux du jeu. Elles sont peuplées d'acteurs et de tiles. On peut également attacher des comportements à des scènes.
+Une scène (scene) est un niveau du jeu. Elles sont peuplées d'acteurs et de tiles. On peut également attacher des comportements à des scènes.
 
 Créer une nouvelle scène. **Attention**, pour les paramètres `Tile Width` et `Tile Height` **il faut bien faire attention à ce que les valeurs correspondent aux tailles de vos Tiles** (dans vos ressources). Sinon, le moteur va y découper des *tiles* qui ne correspondent pas à vos tiles préparées.
 
-Quand la scène est créee, un éditeur de scène est lancé. On va préparer la scène en plaçant des tuiles et des acteurs. On y ajustera également la gravité.
+Quand la scène est créée, un éditeur de scène est lancé. On va préparer la scène en plaçant des tuiles et des acteurs. On y ajustera également la gravité.
 
 Une fois la scène prête à être testée, lancer le jeu (`Ctr+Enter`).
 
@@ -98,23 +98,28 @@ Une Animation représente un état dans lequel un acteur peut se trouver (walkin
 
 - Pour se familiariser avec l'outil, [faire le Crash Course 1](https://www.stencyl.com/help/start/)
 - Améliorer vous-même le crash course 1 : 
-  - on a pas d'inertie en l'air (si on arrête de presser touche left ou right on s'arrête net, perte de l'élan dans une direction)
-  - on ne peut pas sauter quand on est sur un clown
-  - le clown ne se fait pas écraser
+  - on n’a pas d'*inertie* en l'air (si on arrête de presser touche left ou right on s'arrête net, perte de l'élan dans une direction)
+  - on ne peut pas sauter *quand* on est sur un clown
   - le clown ne se déplace pas
 - ne pas oublier d'enregistrer son jeu régulièrement
 
-## Traductions anglais-francais, termes
+## Traductions anglais-français, termes
 
 - *idle*: inactif, sur place
 - *stomp*: piétiner
 - *tile*: tuile
 - *frame*: image d'une animation. Un jeu tournant à 60 [frames/seconde](https://fr.wikipedia.org/wiki/Images_par_seconde) (60 FPS) affiche 60 images en 1 seconde, chaque image est donc affichée durant 1/60 ~ 16.6ms sur la sortie d'affichage.
-- *Game loop*
+- *Game loop*: La *game-loop* est le mécanisme de base qui permet de faire évoluer le jeu dans le temps. C'est une séquence de code qui tourne en boucle tant que le jeu est lancé et se termine soit suite à une action de la personne qui joue, soit par un game-over. Durant la game-loop, trois processus sont généralement en cours d'exécution: 
+  - récupérer et traiter les inputs de la personne qui joue (*input*)
+  - mettre à jour l'état du jeu (déplacement du joueur, passage du temps, mise à jour du monde, etc.) (*update*)
+  - *rendre* le jeu (représentation graphique, peindre le nouvel état sur l'écran pour représenter l'état du jeu actuel) (*render*)
+À la fin de la *loop*, les ressources allouées (mémoire RAM, GPU et CPU) doivent être *proprement rendues* et le contrôle rendu à l'OS.
 
 ## Liens
 
-- [Programmation de jeux vidéos (wiki)](https://fr.wikipedia.org/wiki/Programmation_de_jeux_vid%C3%A9o), aperçu général
+- [Programmation de jeux vidéo (wiki)](https://fr.wikipedia.org/wiki/Programmation_de_jeux_vid%C3%A9o), aperçu général
+- [Game Loop (Programming Pattern)](https://gameprogrammingpatterns.com/game-loop.html), un article sur le pattern de game loop et les écueils à éviter
+- [Game Loop en Javascript](https://developer.mozilla.org/en-US/docs/Games/Anatomy), un article sur la gameloop en Javascript dans l'environnemetn du navigateur (jeux HTML5)
 - [Stencyl (site officiel)](https://www.stencyl.com/)
 - [Stencyl documentation](https://www.stencyl.com/help/)
 - [Working with behaviors (Design Mode)](https://www.stencyl.com/help/view/working-with-behaviors/)
@@ -129,7 +134,7 @@ Une Animation représente un état dans lequel un acteur peut se trouver (walkin
 
 - [Game programming patterns (en)](https://www.pdfdrive.com/game-programming-patterns-e158623095.html), une référence dans le domaine, un livre de [Robert Nystrom](https://twitter.com/munificentbob). Ce livre couvre l'architecture et le design dans le domaine du développement JV.
 
-- [Artificial Intelligence for games, 2n edition (en)](https://www.pdfdrive.com/artificial-intelligence-for-games-e25411627.html), un très beau livre très complet qui référence énormément de patterns, stratégies, techniques et algorithmes pour tous vos besoins en terme d'IA. Vient avec une bibliographie très complète pour approfondir un sujet qui a su retenir notre attention
+- [Artificial Intelligence for games, 2n edition (en)](https://www.pdfdrive.com/artificial-intelligence-for-games-e25411627.html), un très beau livre très complet qui référence énormément de patterns, stratégies, techniques et algorithmes pour tous vos besoins en termes d'IA. Viens avec une bibliographie très complète pour approfondir un sujet qui a su retenir notre attention.
 
 - [The Art of Game Design, 2nd edition (en)](https://www.pdfdrive.com/the-art-of-game-design-a-book-of-lenses-2nd-edition-e157699641.html)
   
@@ -137,6 +142,6 @@ Une Animation représente un état dans lequel un acteur peut se trouver (walkin
   
 - [Procedural generation in game design (en)](https://www.pdfdrive.com/procedural-generation-in-game-design-e184787611.html)
 
-- [GameDev Ressources](https://github.com/Kavex/GameDev-Resources), un dépôt recenssant une tonne de ressources pour le développement de jeux vidéos (asset, code, design, outils...)
-- [Magic tools](https://github.com/ellisonleao/magictools), un autre dépôt recenssant une tonne de ressources pour le développement de jeux vidéos (asset, code, design, outils.
+- [GameDev Ressources](https://github.com/Kavex/GameDev-Resources), un dépôt recensant une tonne de ressources pour le développement de jeux vidéo (asset, code, design, outils...)
+- [Magic tools](https://github.com/ellisonleao/magictools), un autre dépôt recensant une tonne de ressources pour le développement de jeux vidéo (asset, code, design, outils.
 - [Keys to Economic Systems](https://gdkeys.com/keys-to-economic-systems/?utm_source=pocket_mylist), un excellent article sur la modélisation de systèmes économiques dans un jeu vidéo.
