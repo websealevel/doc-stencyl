@@ -128,20 +128,13 @@ Une Animation représente un état dans lequel un acteur peut se trouver (walkin
 ## Ressources
 
 - [Game Developers Conference (GDC)](https://gdconf.com/), LA conférence annuelle de la communauté du développement du jeux vidéos. Des tonnes et des tonnes de conférences gratuites, de qualité (également dans la captation) à regarder.
-
-- [Magic: the Gathering: Twenty Years, Twenty Lessons Learned](https://youtu.be/QHHg99hwQGY)
-- [Diablo: A Classic Game Postmortem](https://youtu.be/VscdPA6sUkc)
-
+- [Magic: the Gathering: Twenty Years, Twenty Lessons Learned](https://youtu.be/QHHg99hwQGY), très belle conférence sur le game design sur le long terme et le renouvellement du gameplay et d'une licence
+- [Diablo: A Classic Game Postmortem](https://youtu.be/VscdPA6sUkc), conférence superbe, drôle et enrichissante sur le développement de Diablo dans les années 90 par le créateur original lui même
 - [Game programming patterns (en)](https://www.pdfdrive.com/game-programming-patterns-e158623095.html), une référence dans le domaine, un livre de [Robert Nystrom](https://twitter.com/munificentbob). Ce livre couvre l'architecture et le design dans le domaine du développement JV.
-
 - [Artificial Intelligence for games, 2n edition (en)](https://www.pdfdrive.com/artificial-intelligence-for-games-e25411627.html), un très beau livre très complet qui référence énormément de patterns, stratégies, techniques et algorithmes pour tous vos besoins en termes d'IA. Viens avec une bibliographie très complète pour approfondir un sujet qui a su retenir notre attention.
-
 - [The Art of Game Design, 2nd edition (en)](https://www.pdfdrive.com/the-art-of-game-design-a-book-of-lenses-2nd-edition-e157699641.html)
-  
 - [Level Up! The guide to great video game design (en)](https://www.pdfdrive.com/level-up-the-guide-to-great-video-game-design-e157921744.html)
-  
 - [Procedural generation in game design (en)](https://www.pdfdrive.com/procedural-generation-in-game-design-e184787611.html)
-
-- [GameDev Ressources](https://github.com/Kavex/GameDev-Resources), un dépôt recensant une tonne de ressources pour le développement de jeux vidéo (asset, code, design, outils...)
-- [Magic tools](https://github.com/ellisonleao/magictools), un autre dépôt recensant une tonne de ressources pour le développement de jeux vidéo (asset, code, design, outils.
+- [GameDev Ressources](https://github.com/Kavex/GameDev-Resources), un dépôt recensant une tonne de ressources pour le développement de jeux vidéo (asset, code, design, outils, etc.)
+- [Magic tools](https://github.com/ellisonleao/magictools), un autre dépôt recensant une tonne de ressources pour le développement de jeux vidéo (asset, code, design, outils, etc.)
 - [Keys to Economic Systems](https://gdkeys.com/keys-to-economic-systems/?utm_source=pocket_mylist), un excellent article sur la modélisation de systèmes économiques dans un jeu vidéo.
