@@ -1,6 +1,6 @@
-# doc-stencyl
+# Stencyl, s'initier au développement d'un jeu vidéo
 
-- [doc-stencyl](#doc-stencyl)
+- [Stencyl, s'initier au développement d'un jeu vidéo](#stencyl-sinitier-au-développement-dun-jeu-vidéo)
   - [Détails techniques](#détails-techniques)
   - [Concepts de base](#concepts-de-base)
     - [Ressources](#ressources)
@@ -11,8 +11,10 @@
   - [Groupes et collisions (groups)](#groupes-et-collisions-groups)
   - [Personnaliser un template d'acteur](#personnaliser-un-template-dacteur)
   - [Les scènes](#les-scènes)
+  - [Animations](#animations)
   - [Conseils](#conseils)
-  - [Traductions anglais-francais](#traductions-anglais-francais)
+  - [Traductions anglais-francais, termes](#traductions-anglais-francais-termes)
+  - [Liens](#liens)
   - [Ressources](#ressources-1)
 
 
@@ -74,7 +76,7 @@ Dans l'éditeur de template d'acteur (Actory Type Editor):
 
 - `Properties`: nom du patron, groupe auquel il appartient
 - `Physics`: rotation autorisée, soumis à la gravité, friction, propriétés élastiques et visqueuses (rebond, amortissement), etc.
-- `Behaviors`: ici on ajoute des comportements prédéfinis (`Logic/Behaviors`) à notre classe d'acteurs et on les configure (constantes du comportement comme la vitesse, hauteur d'un saut, la touche à presser, etc.)
+- `Behaviors`: ici on ajoute des comportements prédéfinis (`Logic/Behaviors`) à notre classe d'acteurs et on les configure (constantes du comportement comme la vitesse, hauteur d'un saut, la touche à presser, etc.). Par exemple, `jump force` détermine la hauteur maximale du saut
 
 >Le moteur fonctionne par composition. On injecte des comportements dans nos objets comme des composants (Pattern Strategy).
 
@@ -88,6 +90,10 @@ Quand la scène est créee, un éditeur de scène est lancé. On va préparer la
 
 Une fois la scène prête à être testée, lancer le jeu (`Ctr+Enter`).
 
+## Animations
+
+Une Animation représente un état dans lequel un acteur peut se trouver (walking, running, jumping, etc.). Il est donc conseillé de nommer les animations en accord avec les états qu'elles représentent. Pour créer une animation, il faut combiner des images (frames)
+
 ## Conseils
 
 - Pour se familiariser avec l'outil, [faire le Crash Course 1](https://www.stencyl.com/help/start/)
@@ -98,14 +104,39 @@ Une fois la scène prête à être testée, lancer le jeu (`Ctr+Enter`).
   - le clown ne se déplace pas
 - ne pas oublier d'enregistrer son jeu régulièrement
 
-## Traductions anglais-francais
+## Traductions anglais-francais, termes
 
 - *idle*: inactif, sur place
 - *stomp*: piétiner
 - *tile*: tuile
+- *frame*: image d'une animation. Un jeu tournant à 60 [frames/seconde](https://fr.wikipedia.org/wiki/Images_par_seconde) (60 FPS) affiche 60 images en 1 seconde, chaque image est donc affichée durant 1/60 ~ 16.6ms sur la sortie d'affichage.
+- *Game loop*
 
-## Ressources
+## Liens
 
+- [Programmation de jeux vidéos (wiki)](https://fr.wikipedia.org/wiki/Programmation_de_jeux_vid%C3%A9o), aperçu général
 - [Stencyl (site officiel)](https://www.stencyl.com/)
 - [Stencyl documentation](https://www.stencyl.com/help/)
 - [Working with behaviors (Design Mode)](https://www.stencyl.com/help/view/working-with-behaviors/)
+
+
+## Ressources
+
+- [Game Developers Conference (GDC)](https://gdconf.com/), LA conférence annuelle de la communauté du développement du jeux vidéos. Des tonnes et des tonnes de conférences gratuites, de qualité (également dans la captation) à regarder.
+
+- [Magic: the Gathering: Twenty Years, Twenty Lessons Learned](https://youtu.be/QHHg99hwQGY)
+- [Diablo: A Classic Game Postmortem](https://youtu.be/VscdPA6sUkc)
+
+- [Game programming patterns (en)](https://www.pdfdrive.com/game-programming-patterns-e158623095.html), une référence dans le domaine, un livre de [Robert Nystrom](https://twitter.com/munificentbob). Ce livre couvre l'architecture et le design dans le domaine du développement JV.
+
+- [Artificial Intelligence for games, 2n edition (en)](https://www.pdfdrive.com/artificial-intelligence-for-games-e25411627.html), un très beau livre très complet qui référence énormément de patterns, stratégies, techniques et algorithmes pour tous vos besoins en terme d'IA. Vient avec une bibliographie très complète pour approfondir un sujet qui a su retenir notre attention
+
+- [The Art of Game Design, 2nd edition (en)](https://www.pdfdrive.com/the-art-of-game-design-a-book-of-lenses-2nd-edition-e157699641.html)
+  
+- [Level Up! The guide to great video game design (en)](https://www.pdfdrive.com/level-up-the-guide-to-great-video-game-design-e157921744.html)
+  
+- [Procedural generation in game design (en)](https://www.pdfdrive.com/procedural-generation-in-game-design-e184787611.html)
+
+- [GameDev Ressources](https://github.com/Kavex/GameDev-Resources), un dépôt recenssant une tonne de ressources pour le développement de jeux vidéos (asset, code, design, outils...)
+- [Magic tools](https://github.com/ellisonleao/magictools), un autre dépôt recenssant une tonne de ressources pour le développement de jeux vidéos (asset, code, design, outils.
+- [Keys to Economic Systems](https://gdkeys.com/keys-to-economic-systems/?utm_source=pocket_mylist), un excellent article sur la modélisation de systèmes économiques dans un jeu vidéo.
