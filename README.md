@@ -91,7 +91,11 @@ Une fois la scène prête à être testée, lancer le jeu (`Ctr+Enter`).
 ## Conseils
 
 - Pour se familiariser avec l'outil, [faire le Crash Course 1](https://www.stencyl.com/help/start/)
-- Améliorer vous-même le crash course 1
+- Améliorer vous-même le crash course 1 : 
+  - on a pas d'inertie en l'air (si on arrête de presser touche left ou right on s'arrête net, perte de l'élan dans une direction)
+  - on ne peut pas sauter quand on est sur un clown
+  - le clown ne se fait pas écraser
+  - le clown ne se déplace pas
 - ne pas oublier d'enregistrer son jeu régulièrement
 
 ## Traductions anglais-francais
