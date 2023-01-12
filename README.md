@@ -11,7 +11,7 @@
   - [Groupes et collisions (groups)](#groupes-et-collisions-groups)
   - [Personnaliser un template d'acteur](#personnaliser-un-template-dacteur)
   - [Les scènes](#les-scènes)
-  - [Animations](#animations)
+  - [Animation](#animation)
   - [Conseils](#conseils)
   - [Traductions anglais-français, termes](#traductions-anglais-français-termes)
   - [Liens](#liens)
@@ -90,14 +90,20 @@ Quand la scène est créée, un éditeur de scène est lancé. On va préparer l
 
 Une fois la scène prête à être testée, lancer le jeu (`Ctr+Enter`).
 
-## Animations
+## Animation
 
-Une Animation représente un état dans lequel un acteur peut se trouver (walking, running, jumping, etc.). Il est donc conseillé de nommer les animations en accord avec les états qu'elles représentent. Pour créer une animation, il faut combiner des images (frames)
+Une `Animation` représente un état dans lequel un acteur peut se trouver (*walking*, *running*, *jumping*, etc.). Il est donc conseillé de nommer les animations en accord avec les états qu'elles représentent. Pour créer une animation, il faut combiner des images (*frames*).
+
+
+<!-- A faire: 
+- finir le crash course 2
+- etre a l'aise avec le Design Mode
+- Comprendre les [évènements](https://www.stencyl.com/help/view/events-reference/) et comment créer des comportements -->
 
 ## Conseils
 
-- Pour se familiariser avec l'outil, [faire le Crash Course 1](https://www.stencyl.com/help/start/)
-- Améliorer vous-même le crash course 1 : 
+- Pour se familiariser avec l'outil, [faire le Crash Course 1](https://www.stencyl.com/help/start/) et le [Crash Course 2](https://www.stencyl.com/help/start/)
+- Améliorer vous-même le Crash Course 1 : 
   - on n’a pas d'*inertie* en l'air (si on arrête de presser touche left ou right on s'arrête net, perte de l'élan dans une direction)
   - on ne peut pas sauter *quand* on est sur un clown
   - le clown ne se déplace pas
