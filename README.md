@@ -128,7 +128,11 @@ Une `Animation` représente un état dans lequel un acteur peut se trouver (*wal
 - [Game Loop en Javascript](https://developer.mozilla.org/en-US/docs/Games/Anatomy), un article sur la gameloop en Javascript dans l'environnemetn du navigateur (jeux HTML5)
 - [Stencyl (site officiel)](https://www.stencyl.com/)
 - [Stencyl documentation](https://www.stencyl.com/help/)
-- [Working with behaviors (Design Mode)](https://www.stencyl.com/help/view/working-with-behaviors/)
+- [Working with behaviors (Design Mode)](https://www.stencyl.com/help/view/working-with-behaviors/), créer des comportements et maitriser le `Design Mode`
+- [Events](https://www.stencyl.com/help/view/events-reference/)
+- [(Behavior) attributes](https://www.stencyl.com/help/view/attributes/), les variables d'état d'un comportement, et donc par extension, d'un acteur ou d'une scène qui implémente ce comportement
+- [Game attributes](https://www.stencyl.com/help/view/game-attributes/), les variables d'environnement (global au jeu)
+- [Attributes Types](https://www.stencyl.com/help/view/attribute-types-reference/), les différents types d'attributs définis par Stencyl, utilisables et configurables comme propriétés de comportements. Et leurs représentations graphiques
 
 
 ## Ressources
