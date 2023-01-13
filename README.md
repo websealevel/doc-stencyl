@@ -12,6 +12,11 @@
   - [Personnaliser un template d'acteur](#personnaliser-un-template-dacteur)
   - [Les scènes](#les-scènes)
   - [Animation](#animation)
+  - [Évènements](#évènements)
+  - [Évènements personnalisés](#évènements-personnalisés)
+  - [Changer de scène](#changer-de-scène)
+    - [Les blocs du *Design mode*](#les-blocs-du-design-mode)
+  - [Les positions](#les-positions)
   - [Conseils](#conseils)
   - [Traductions anglais-français, termes](#traductions-anglais-français-termes)
   - [Liens](#liens)
@@ -95,10 +100,34 @@ Une fois la scène prête à être testée, lancer le jeu (`Ctr+Enter`).
 Une `Animation` représente un état dans lequel un acteur peut se trouver (*walking*, *running*, *jumping*, etc.). Il est donc conseillé de nommer les animations en accord avec les états qu'elles représentent. Pour créer une animation, il faut combiner des images (*frames*).
 
 
-<!-- A faire: 
-- finir le crash course 2
-- etre a l'aise avec le Design Mode
-- Comprendre les [évènements](https://www.stencyl.com/help/view/events-reference/) et comment créer des comportements -->
+## Évènements
+
+Les évènements (events) sont définis dans le Design Mode. Un évènement contient de la logique de jeu. *Les comportements (behaviors) sont composés d'évènements*. En fait, un comportement est un conteneur d'évènements. On utilise généralement des comportements car on peut les attacher ensuite à n'importe quelle scène ou Actor Type. Créer directement un évènement sur un `Actor Type` ou une scène ne permet pas de dupliquer le comportement avec d'autres acteurs. C'est utile si on veut désigner *du comportement unique à une classe*.
+
+Les différents types d'évènements:
+
+- Basic:
+  - `When creating`: à la création de l'objet (acteur, scene)
+  - `When drawing`: au moment du rendu graphique sur la sortie. Se repète sans cesse dans la game loop.
+  - `When updating`: au moment de la mise à jour de l'état du jeu. Se repète sans cesse dans la game loop. C'est *la mise à jour qui fait avancer l'état du jeu*.
+
+## Évènements personnalisés
+
+En Design Mode, dans l'onglet Events d'un Actor Type, Scene on peut définir un *évènement custom* avec une chaine de carcactères dans certains blocs `trigger event` (onglet `Behaviors`). On peut ainsi déclencer des évènements personnalisés sur un Actor Type ou une scène dans des conditions particulières. Puis on peut y répondre en ajoutant un évènement puis `Advanced/Custom Events`.
+
+## Changer de scène
+
+Les block utiles sont dans `Scene/Game flow` dans le *Design Mode*. Voir ici un [article de la documentation sur le changement de scène](https://www.stencyl.com/help/view/changing-scenes/) (de niveaux).
+
+### Les blocs du *Design mode*
+
+-  `set x-speed to [value] for [Self]`: ajuste la vitesse horizontale (>0 vers la droite) pour Self, la classe sur laquelle on déclare l'évènement (Actor Type ou Scene).
+
+
+## Les positions
+
+Stencyl mesure la position d'un acteur depuis le coin haut gauche du sprite. Conformément aux standards du traitement d'image, la position (0,0) est le coin haut à gauche (scène, sprite de l'acteur). *L'axe x est orienté vers la droite et l'axe y vers le bas*.
+
 
 ## Conseils
 
